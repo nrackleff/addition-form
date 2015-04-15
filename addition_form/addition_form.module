@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * Contains function related to creating a menu item.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function addition_form_menu() {
+  $items = array();
+  $items['addition_form'] = array(
+    'title' => 'Add \'em up! ',
+    'access callback' => TRUE,
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('addition_form'),
+    'file' => 'addition_form.form.inc',
+    'type' => MENU_NORMAL_ITEM,
+    'menu' => 'navigation',
+  );
+
+  return $items;
+}
