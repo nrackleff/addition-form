@@ -1,0 +1,3 @@
+name = Addition Form
+description = Module to demonstrate the form API.
+core = 7.x
